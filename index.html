@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sreehari | End-to-End Digital Growth & E-commerce</title>
+    <title>Sreehari | Digital Growth & E-commerce Consultant</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
@@ -17,18 +17,22 @@
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         .hover-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .hover-card:hover { transform: translateY(-8px); }
-        @keyframes pulse { 0% { transform: scale(0.95); opacity: 1; } 50% { transform: scale(1.1); opacity: 0.7; } 100% { transform: scale(0.95); opacity: 1; } }
-        .pulse-dot { animation: pulse 2s infinite; }
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; z-index: 100; transition: transform 0.3s ease; }
+        .whatsapp-float:hover { transform: scale(1.1); }
     </style>
 </head>
 <body class="selection:bg-blue-500/30">
 
+    <a href="https://wa.me/917560803013" target="_blank" class="whatsapp-float bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl border-2 border-white/20">
+        <i class="fa-brands fa-whatsapp text-white text-3xl"></i>
+    </a>
+
     <nav class="fixed top-0 w-full z-[60] px-3 md:px-6 py-4 md:py-6">
         <div class="max-w-4xl mx-auto flex justify-center items-center glass-card px-4 md:px-10 py-3 rounded-2xl shadow-2xl border-white/5">
             <div class="flex items-center justify-between w-full md:w-auto gap-4 sm:gap-6 md:gap-12">
-                <a href="#services" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">Services</a>
-                <a href="#work" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">Portfolio</a>
-                <a href="#pricing" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">Pricing</a>
+                <a href="#services" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">The Services</a>
+                <a href="#work" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">The Work</a>
+                <a href="#about" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">The Strategist</a>
                 <a href="#faq" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">FAQ</a>
             </div>
         </div>
@@ -36,210 +40,160 @@
 
     <section class="pt-40 md:pt-52 pb-16 px-6 text-center">
         <div class="max-w-4xl mx-auto">
-            <span class="px-4 py-1.5 rounded-full bg-blue-900/30 text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-6 inline-block border border-blue-500/20">Full-Stack Digital Growth & E-com</span>
-            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] text-white">Scale Your Vision, <br><span class="gradient-text">Own Your Growth.</span></h1>
-            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">Permanent portfolio assets, high-impact marketing, and **E-commerce scaling on Amazon, Flipkart & Shopify.** Managed by an Associate Manager & Media Strategist.</p>
+            <span class="px-4 py-1.5 rounded-full bg-blue-900/30 text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-6 inline-block border border-blue-500/20">Elite Growth Consulting</span>
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] text-white">Your Business. <br><span class="gradient-text">Only Better.</span></h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">We don't just "run ads." We build high-speed digital assets and scale brands on <strong>Amazon, Flipkart, and Shopify</strong> using data-backed strategies.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#pricing" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-700 transition-all">View Packages</a>
-                <button onclick="openLeadForm()" class="glass-card text-white px-8 py-4 rounded-2xl font-bold text-lg border-white/10 hover:bg-slate-800 transition-all flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-calendar-check text-blue-400"></i> Book Growth Call
-                </button>
+                <button onclick="openLeadForm()" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-700 transition-all">Request Growth Audit</button>
+                <a href="https://wa.me/917560803013" class="glass-card text-white px-8 py-4 rounded-2xl font-bold text-lg border-white/10 hover:bg-slate-800 transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-green-400"></i> WhatsApp Me
+                </a>
             </div>
         </div>
     </section>
 
     <section id="services" class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
         <div class="text-center mb-16">
-            <span class="text-blue-500 font-bold uppercase tracking-widest text-xs">The 360° Advantage</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold mt-4 text-white">Full-Service Digital <span class="gradient-text">Execution.</span></h2>
+            <span class="text-blue-500 font-bold uppercase tracking-widest text-xs">Growth Ecosystem</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-4 text-white">Expertise That <span class="gradient-text">Delivers.</span></h2>
+            <p class="text-slate-400 mt-4 max-w-xl mx-auto">No technical jargon. Just results. Here is how we help you win.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="glass-card p-8 rounded-[2rem] hover-card border-white/10">
-                <div class="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-code text-blue-500 text-xl"></i></div>
-                <h3 class="text-xl font-bold text-white mb-3">Permanent Portfolios</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Fast, permanent sites on GitHub infrastructure. Zero monthly hosting fees for life.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+                <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-cloud-bolt text-blue-500 text-2xl"></i></div>
+                <h3 class="text-2xl font-bold text-white mb-4">Permanent Portfolio</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Think of this as your <strong>Digital Identity Card</strong>. We build professional websites that stay live forever. Best part? You never pay "monthly rent" (hosting fees) again.</p>
+                <ul class="text-[11px] font-bold text-blue-400 uppercase tracking-widest space-y-2">
+                    <li><i class="fa-solid fa-check mr-2"></i> Zero Hosting Fees</li>
+                    <li><i class="fa-solid fa-check mr-2"></i> Ultra-Fast Loading</li>
+                </ul>
             </div>
-            <div class="glass-card p-8 rounded-[2rem] hover-card border-white/10">
-                <div class="w-12 h-12 bg-yellow-600/20 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-cart-shopping text-yellow-500 text-xl"></i></div>
-                <h3 class="text-xl font-bold text-white mb-3">E-commerce Scaling</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Marketplace dominance on **Amazon & Flipkart** plus high-converting **Shopify** store development.</p>
+            <div class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+                <div class="w-14 h-14 bg-yellow-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-store text-yellow-500 text-2xl"></i></div>
+                <h3 class="text-2xl font-bold text-white mb-4">E-com Scaling</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">We help you put your products where the customers are. We manage everything on <strong>Amazon and Flipkart</strong>, or build your own independent brand store on <strong>Shopify</strong>.</p>
+                <ul class="text-[11px] font-bold text-yellow-400 uppercase tracking-widest space-y-2">
+                    <li><i class="fa-solid fa-check mr-2"></i> Marketplace Launch</li>
+                    <li><i class="fa-solid fa-check mr-2"></i> Sales Optimization</li>
+                </ul>
             </div>
-            <div class="glass-card p-8 rounded-[2rem] hover-card border-white/10">
-                <div class="w-12 h-12 bg-teal-600/20 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-chart-line text-teal-500 text-xl"></i></div>
-                <h3 class="text-xl font-bold text-white mb-3">Marketing Strategy</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Leveraging professional agency frameworks to build sustainable roadmaps for brand scale.</p>
+            <div class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+                <div class="w-14 h-14 bg-teal-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-map-location-dot text-teal-500 text-2xl"></i></div>
+                <h3 class="text-2xl font-bold text-white mb-4">Growth Strategy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Marketing without a plan is just spending money. We build a <strong>Roadmap</strong> for your business—telling you exactly where to invest to get the highest profit back.</p>
+                <ul class="text-[11px] font-bold text-teal-400 uppercase tracking-widest space-y-2">
+                    <li><i class="fa-solid fa-check mr-2"></i> ROI-Focused Planning</li>
+                    <li><i class="fa-solid fa-check mr-2"></i> Competitor Analysis</li>
+                </ul>
             </div>
-            <div class="glass-card p-8 rounded-[2rem] hover-card border-white/10">
-                <div class="w-12 h-12 bg-purple-600/20 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-video text-purple-500 text-xl"></i></div>
-                <h3 class="text-xl font-bold text-white mb-3">Content Creation</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">High-engagement copy and social media assets that turn scrollers into loyal customers.</p>
+            <div class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+                <div class="w-14 h-14 bg-orange-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-magnifying-glass text-orange-500 text-2xl"></i></div>
+                <h3 class="text-2xl font-bold text-white mb-4">SEO Mastery</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">If a customer searches for your product, you should be the first thing they see. We fix your website so <strong>Google starts recommending you</strong> to new customers automatically.</p>
+                <ul class="text-[11px] font-bold text-orange-400 uppercase tracking-widest space-y-2">
+                    <li><i class="fa-solid fa-check mr-2"></i> Rank #1 Strategy</li>
+                    <li><i class="fa-solid fa-check mr-2"></i> Free Traffic Growth</li>
+                </ul>
             </div>
-            <div class="glass-card p-8 rounded-[2rem] hover-card border-white/10">
-                <div class="w-12 h-12 bg-orange-600/20 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-magnifying-glass text-orange-500 text-xl"></i></div>
-                <h3 class="text-xl font-bold text-white mb-3">SEO Mastery</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Dominating search results via technical audits, keyword strategy, and organic growth.</p>
+            <div class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+                <div class="w-14 h-14 bg-pink-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-palette text-pink-500 text-2xl"></i></div>
+                <h3 class="text-2xl font-bold text-white mb-4">Design & Content</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">In the digital world, people <strong>buy with their eyes</strong>. We create stunning logos, ad pictures, and videos that make your business look like a premium brand.</p>
+                <ul class="text-[11px] font-bold text-pink-400 uppercase tracking-widest space-y-2">
+                    <li><i class="fa-solid fa-check mr-2"></i> Premium Brand Look</li>
+                    <li><i class="fa-solid fa-check mr-2"></i> Viral Ad Creatives</li>
+                </ul>
             </div>
-            <div class="glass-card p-8 rounded-[2rem] hover-card border-white/10">
-                <div class="w-12 h-12 bg-pink-600/20 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-wand-magic-sparkles text-pink-500 text-xl"></i></div>
-                <h3 class="text-xl font-bold text-white mb-3">Graphic Design</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Premium brand visuals, logos, and ad creatives designed for peak performance.</p>
+            <div class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+                <div class="w-14 h-14 bg-indigo-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-bullseye text-indigo-500 text-2xl"></i></div>
+                <h3 class="text-2xl font-bold text-white mb-4">Targeted Marketing</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">We show your ads only to the <strong>people most likely to buy</strong>. Whether it's Facebook, Instagram, or Google, we make sure your ad budget is never wasted.</p>
+                <ul class="text-[11px] font-bold text-indigo-400 uppercase tracking-widest space-y-2">
+                    <li><i class="fa-solid fa-check mr-2"></i> Meta & Google Ads</li>
+                    <li><i class="fa-solid fa-check mr-2"></i> Lower Cost Per Sale</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="work" class="max-w-7xl mx-auto px-6 py-12 relative border-t border-white/5">
-        <div class="flex justify-between items-end mb-8">
+    <section id="about" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
+        <div class="grid md:grid-cols-2 gap-16 items-center text-left">
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-blue-500/20 rounded-[3rem] blur-2xl group-hover:bg-blue-500/30 transition-all"></div>
+                <img src="profile.jpg" alt="Sreehari" class="relative rounded-[3rem] w-full max-w-sm mx-auto shadow-2xl grayscale hover:grayscale-0 transition-all duration-700 border border-white/10">
+            </div>
             <div>
-                <h2 class="text-3xl font-extrabold text-white">Portfolio & Case Studies</h2>
-                <p class="text-slate-400 text-sm">Real results across E-commerce, Web, and Strategy.</p>
-            </div>
-            <div class="flex gap-3">
-                <button onclick="scrollWork(-1)" class="w-10 h-10 rounded-full glass-card flex items-center justify-center border-white/10 hover:bg-blue-600 text-white transition-all"><i class="fa-solid fa-chevron-left text-xs"></i></button>
-                <button onclick="scrollWork(1)" class="w-10 h-10 rounded-full glass-card flex items-center justify-center border-white/10 hover:bg-blue-600 text-white transition-all"><i class="fa-solid fa-chevron-right text-xs"></i></button>
-            </div>
-        </div>
-        <div id="work-container" class="work-scroll-container no-scrollbar">
-            <div class="min-w-[85%] md:min-w-[400px] snap-center">
-                <a href="https://sreeharia97.github.io/Akshaj.github.io/" target="_blank" class="block group">
-                    <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border-white/10 h-full relative">
-                        <div class="aspect-[16/10] bg-slate-800 relative overflow-hidden">
-                            <img src="https://via.placeholder.com/400x250/1e293b/ffffff?text=Portfolio+Asset" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-5 text-white"><p class="text-[9px] font-bold text-blue-400 uppercase mb-1">Web Development</p><h3 class="text-md font-bold">Executive Asset Portfolio</h3></div>
-                    </div>
-                </a>
-            </div>
-            <div class="min-w-[85%] md:min-w-[400px] snap-center">
-                <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border-white/10 h-full relative">
-                    <div class="aspect-[16/10] bg-slate-800"><img src="https://via.placeholder.com/400x250/334155/ffffff?text=Amazon+Flipkart+Store" class="w-full h-full object-cover opacity-80"></div>
-                    <div class="p-5 text-white"><p class="text-[9px] font-bold text-yellow-400 uppercase mb-1">E-commerce</p><h3 class="text-md font-bold">Marketplace Launch & Scaling</h3></div>
-                </div>
-            </div>
-            <div class="min-w-[85%] md:min-w-[400px] snap-center">
-                <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border-white/10 h-full relative">
-                    <div class="aspect-[16/10] bg-slate-800"><img src="https://via.placeholder.com/400x250/0f172a/ffffff?text=Shopify+Design" class="w-full h-full object-cover opacity-80"></div>
-                    <div class="p-5 text-white"><p class="text-[9px] font-bold text-teal-400 uppercase mb-1">Shopify</p><h3 class="text-md font-bold">D2C Storefront Development</h3></div>
-                </div>
-            </div>
-            <div class="min-w-[85%] md:min-w-[400px] snap-center">
-                <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border-white/10 h-full relative">
-                    <div class="aspect-[16/10] bg-slate-800"><img src="https://via.placeholder.com/400x250/1e293b/ffffff?text=Strategy+Execution" class="w-full h-full object-cover opacity-80"></div>
-                    <div class="p-5 text-white"><p class="text-[9px] font-bold text-orange-400 uppercase mb-1">Digital Strategy</p><h3 class="text-md font-bold">Multi-Channel Growth Engine</h3></div>
-                </div>
-            </div>
-            <div class="min-w-[85%] md:min-w-[400px] snap-center">
-                <div class="glass-card rounded-[1.5rem] overflow-hidden hover-card border-white/10 h-full relative">
-                    <div class="aspect-[16/10] bg-slate-700"><img src="https://via.placeholder.com/400x250/334155/ffffff?text=Ad+Performance" class="w-full h-full object-cover opacity-80"></div>
-                    <div class="p-5 text-white"><p class="text-[9px] font-bold text-indigo-400 uppercase mb-1">Paid Ads</p><h3 class="text-md font-bold">3.5x ROAS Meta Campaign</h3></div>
+                <span class="text-blue-500 font-bold uppercase tracking-widest text-xs">The Expert Strategist</span>
+                <h2 class="text-4xl font-extrabold mt-4 mb-6 text-white">Engineering <br><span class="gradient-text">Business Success.</span></h2>
+                <p class="text-slate-400 mb-6 leading-relaxed text-lg">I am <strong>Sreehari</strong>, an Associate Manager and Digital Growth Consultant. With a background in <strong>Engineering (B.Tech)</strong> and an <strong>MBA in Marketing</strong>, I combine technical precision with high-level business strategy.</p>
+                <p class="text-slate-400 mb-8 leading-relaxed">Having managed multi-million dollar media budgets, I now help visionaries and businesses stop "renting" their digital presence and start owning permanent assets that drive revenue.</p>
+                <div class="flex gap-12">
+                    <div><p class="text-3xl font-black text-blue-600">5+ Yrs</p><p class="text-[10px] text-slate-500 uppercase font-bold">In Digital</p></div>
+                    <div><p class="text-3xl font-black text-blue-600">$200M+</p><p class="text-[10px] text-slate-500 uppercase font-bold">Media Managed</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h2 class="text-3xl md:text-5xl font-extrabold mb-16 text-white">Investment Tiers</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-            <div class="glass-card p-10 rounded-[2.5rem] border-white/10 flex flex-col">
-                <h3 class="text-xl font-bold mb-2 text-white">The Essential</h3>
-                <div class="text-4xl font-black my-6 text-white">₹4,999</div>
-                <ul class="space-y-4 text-sm mb-8 text-slate-400 flex-grow">
-                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Permanent Portfolio Website</li>
-                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Zero Hosting Fees Forever</li>
-                </ul>
-                <a href="https://wa.me/917560803013" class="w-full py-4 rounded-xl border border-blue-600 text-blue-500 font-bold text-center block hover:bg-blue-600 hover:text-white transition-all">Get Started</a>
+    <section id="engagement" class="max-w-6xl mx-auto px-6 py-24 text-center border-t border-white/5">
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-16 text-white">How We <span class="gradient-text">Work Together.</span></h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            <div class="glass-card p-12 rounded-[3rem] border-white/10">
+                <h3 class="text-2xl font-bold mb-4 text-white">Project-Based</h3>
+                <p class="text-slate-400 mb-6">Best for building specific assets like your Permanent Portfolio, Shopify Store setup, or a one-time SEO audit. Clear scope, fixed delivery timeline.</p>
+                <button onclick="openLeadForm()" class="text-blue-500 font-bold flex items-center gap-2 hover:gap-4 transition-all">Discuss a Project <i class="fa-solid fa-arrow-right"></i></button>
             </div>
-            <div class="bg-blue-600 p-10 rounded-[2.5rem] transform md:scale-105 shadow-2xl relative text-white flex flex-col">
-                <div class="absolute top-0 right-10 -translate-y-1/2 bg-teal-400 text-slate-900 text-[10px] font-black px-4 py-1 rounded-full uppercase">Growth Suite</div>
-                <h3 class="text-xl font-bold mb-2">Accelerator</h3>
-                <div class="text-4xl font-black my-6 text-white">₹19,999</div>
-                <ul class="space-y-4 text-sm mb-8 flex-grow">
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Portfolio Asset Included</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Shopify or Amazon Setup</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> 10 High-Conversion Graphics</li>
-                    <li><i class="fa-solid fa-check text-teal-300 mr-2"></i> Ad Account Structure Audit</li>
-                </ul>
-                <a href="https://wa.me/917560803013" class="w-full py-4 rounded-xl bg-white text-blue-600 font-bold text-center block hover:bg-slate-100 transition-all">Start Scaling</a>
-            </div>
-            <div class="glass-card p-10 rounded-[2.5rem] border-white/10 flex flex-col">
-                <h3 class="text-xl font-bold mb-2 text-white">Scale Partner</h3>
-                <div class="text-4xl font-black my-6 text-white">Custom</div>
-                <ul class="space-y-4 text-sm mb-8 text-slate-400 flex-grow">
-                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Full Marketplace Management</li>
-                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Performance Marketing (Ads)</li>
-                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Monthly Growth Strategy</li>
-                </ul>
-                <a href="https://wa.me/917560803013" class="w-full py-4 rounded-xl bg-slate-100 text-slate-900 font-bold text-center block hover:bg-white transition-all">Consult Sreehari</a>
+            <div class="glass-card p-12 rounded-[3rem] border-blue-500/30 bg-blue-500/5">
+                <h3 class="text-2xl font-bold mb-4 text-white">Growth Retainer</h3>
+                <p class="text-slate-400 mb-6">Best for businesses ready to scale. I become your dedicated Growth Partner, managing your ads, marketplace presence, and monthly marketing strategy.</p>
+                <button onclick="openLeadForm()" class="text-blue-500 font-bold flex items-center gap-2 hover:gap-4 transition-all">Explore Partnership <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
     </section>
 
     <section id="faq" class="max-w-4xl mx-auto px-6 py-24 border-t border-white/5">
         <div class="text-center mb-16">
-            <span class="text-blue-500 font-bold uppercase tracking-widest text-[10px]">FAQ</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold mt-2 text-white">Strategy <span class="gradient-text">Decoded.</span></h2>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white">Simple <span class="gradient-text">Clarifications.</span></h2>
         </div>
         <div class="space-y-4">
             <div class="glass-card rounded-2xl overflow-hidden border-white/10">
                 <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
-                    <span class="font-bold text-slate-200 text-sm md:text-base">Marketplace (Amazon/Flipkart) vs. Shopify?</span>
-                    <i id="faq-icon-1" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
+                    <span class="font-bold text-slate-200">Why no fixed pricing?</span>
+                    <i id="faq-icon-1" class="fa-solid fa-plus text-blue-500 transition-transform"></i>
                 </button>
-                <div id="faq-ans-1" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
-                    Marketplaces give you instant traffic, while Shopify gives you brand ownership and higher margins. We help you dominate both by listing on Amazon/Flipkart for reach and scaling your Shopify store for long-term equity.
+                <div id="faq-ans-1" class="hidden px-6 pb-6 text-slate-400 text-sm border-t border-white/5 pt-4">
+                    Every business has different goals. A startup needs a different strategy than an established brand spending lakhs per month. We customize our fees based on the complexity and value we provide to your specific business.
                 </div>
             </div>
             <div class="glass-card rounded-2xl overflow-hidden border-white/10">
                 <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
-                    <span class="font-bold text-slate-200 text-sm md:text-base">What is a "Permanent Digital Asset"?</span>
-                    <i id="faq-icon-2" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
+                    <span class="font-bold text-slate-200">How is the website "Permanent"?</span>
+                    <i id="faq-icon-2" class="fa-solid fa-plus text-blue-500 transition-transform"></i>
                 </button>
-                <div id="faq-ans-2" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
-                    Unlike standard platforms, I host your portfolio on GitHub’s global infrastructure. It's lightning-fast, secure, and has **zero monthly hosting fees** for the rest of your life.
-                </div>
-            </div>
-            <div class="glass-card rounded-2xl overflow-hidden border-white/10">
-                <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
-                    <span class="font-bold text-slate-200 text-sm md:text-base">How do you manage E-com ads effectively?</span>
-                    <i id="faq-icon-3" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
-                </button>
-                <div id="faq-ans-3" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
-                    I use professional agency frameworks to optimize for ROAS (Return on Ad Spend) and CAC (Customer Acquisition Cost). We focus on full-funnel tracking so every rupee spent is accounted for.
-                </div>
-            </div>
-            <div class="glass-card rounded-2xl overflow-hidden border-white/10">
-                <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex justify-between items-center hover:bg-white/5 transition-all">
-                    <span class="font-bold text-slate-200 text-sm md:text-base">Do you handle Graphic Design & Content too?</span>
-                    <i id="faq-icon-4" class="fa-solid fa-plus text-blue-500 transition-transform duration-300"></i>
-                </button>
-                <div id="faq-ans-4" class="hidden px-6 pb-6 text-slate-400 text-sm leading-relaxed border-t border-white/5 pt-4">
-                    Yes. From Amazon A+ content to Shopify banners and social media reels, we create visuals and copy that are engineered to sell, not just look pretty.
+                <div id="faq-ans-2" class="hidden px-6 pb-6 text-slate-400 text-sm border-t border-white/5 pt-4">
+                    Unlike Wix or GoDaddy, we don't use simple editors that charge you monthly fees. We write professional code and host it on global developer infrastructure (GitHub) which is free forever for sites like these. You save ₹15,000+ per year.
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="py-16 text-center border-t border-white/5 px-6">
-        <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-6">© 2026 Sreehari • Associate Manager & Digital Growth Strategist</p>
-        <div class="flex flex-wrap justify-center gap-6 text-[10px] font-bold uppercase tracking-wider text-slate-400">
-            <button onclick="toggleModal('terms')" class="hover:text-blue-400">Terms</button>
-            <button onclick="toggleModal('privacy')" class="hover:text-blue-400">Privacy</button>
-            <button onclick="toggleModal('refund')" class="hover:text-blue-400">Refunds</button>
-        </div>
+        <p class="text-slate-500 text-[10px] font-bold uppercase tracking-widest mb-6">© 2026 Sreehari • Associate Manager & Digital Strategist</p>
     </footer>
 
     <div id="lead-form-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
         <div class="glass-card w-full max-w-lg rounded-[2.5rem] p-10 shadow-2xl relative">
             <button onclick="closeLeadForm()" class="absolute top-6 right-6 text-slate-500 hover:text-white"><i class="fa-solid fa-xmark text-xl"></i></button>
-            <h2 class="text-2xl font-extrabold mb-6 text-white">Schedule Audit</h2>
+            <h2 class="text-2xl font-extrabold mb-6 text-white">Consultation Request</h2>
             <form id="strategy-form" class="space-y-4">
                 <input type="text" id="lead-name" placeholder="Your Name" required class="w-full bg-slate-900/50 border border-white/10 rounded-xl p-4 text-white outline-none focus:border-blue-500">
                 <select id="lead-goal" class="w-full bg-slate-900/50 border border-white/10 rounded-xl p-4 text-slate-400 outline-none focus:border-blue-500">
-                    <option value="E-commerce Scaling">E-commerce Scaling (Shopify/Amazon)</option>
-                    <option value="Complete Growth Suite">Full Growth Suite (Web + Strategy)</option>
-                    <option value="Permanent Website">Permanent Portfolio Website</option>
-                    <option value="Ad Performance">Ad Performance Audit</option>
+                    <option value="General Consultation">General Business Audit</option>
+                    <option value="E-commerce Scaling">E-commerce Scaling</option>
+                    <option value="Portfolio Website">Permanent Website Build</option>
+                    <option value="Marketing Retainer">Full Growth Partnership</option>
                 </select>
-                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl">Get Growth Roadmap</button>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl">Request WhatsApp Callback</button>
             </form>
         </div>
     </div>
@@ -248,13 +202,8 @@
         function toggleFaq(id) {
             const ans = document.getElementById(`faq-ans-${id}`);
             const icon = document.getElementById(`faq-icon-${id}`);
-            if (ans.classList.contains('hidden')) {
-                ans.classList.replace('hidden', 'block');
-                icon.style.transform = 'rotate(45deg)';
-            } else {
-                ans.classList.replace('block', 'hidden');
-                icon.style.transform = 'rotate(0deg)';
-            }
+            ans.classList.toggle('hidden');
+            icon.style.transform = ans.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(45deg)';
         }
         function openLeadForm() { document.getElementById('lead-form-modal').classList.replace('hidden', 'flex'); }
         function closeLeadForm() { document.getElementById('lead-form-modal').classList.replace('flex', 'hidden'); }
@@ -264,11 +213,6 @@
             window.open(`https://wa.me/917560803013?text=${message}`, '_blank');
             closeLeadForm();
         });
-        function scrollWork(direction) {
-            const container = document.getElementById('work-container');
-            const scrollAmount = window.innerWidth > 768 ? 424 : container.clientWidth * 0.85;
-            container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-        }
     </script>
 </body>
 </html>
