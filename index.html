@@ -34,7 +34,7 @@
             <div class="flex items-center justify-between w-full md:w-auto gap-4 sm:gap-6 md:gap-12">
                 <a href="#services" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">Services</a>
                 <a href="#work" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">Projects</a>
-                <a href="#testimonials" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">Proof</a>
+                <a href="#testimonials" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">Success Stories</a>
                 <a href="#faq" class="text-[9px] md:text-sm font-bold uppercase tracking-widest text-slate-300 hover:text-blue-400 transition-colors whitespace-nowrap">FAQ</a>
             </div>
         </div>
@@ -61,64 +61,76 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div onclick="toggleDetails('detail-1')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+            <div onclick="toggleDetails('detail-1')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10 relative overflow-hidden">
                 <div class="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-robot text-blue-500 text-2xl"></i></div>
                 <h3 class="text-2xl font-bold text-white mb-2">AI Workflow Automation</h3>
                 <p class="text-slate-400 text-sm leading-relaxed">Eliminate manual tasks with automated workflows using Make.com & n8n.</p>
                 <div id="detail-1" class="details-content text-slate-300 text-sm border-t border-white/5 mt-4">
                     <p class="mb-3">I build smart systems that connect your CRM, WhatsApp, and Email. Your business runs on autopilot, 24/7.</p>
                 </div>
-                <div class="mt-6 flex justify-between items-center text-blue-400 text-[10px] font-bold uppercase tracking-widest"><span>How it works</span><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mt-6 flex justify-between items-center text-blue-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span>How it works</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
 
-            <div onclick="toggleDetails('detail-2')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+            <div onclick="toggleDetails('detail-2')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10 relative overflow-hidden">
                 <div class="w-14 h-14 bg-yellow-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-chart-line text-yellow-500 text-2xl"></i></div>
                 <h3 class="text-2xl font-bold text-white mb-2">Data & AI Strategy</h3>
                 <p class="text-slate-400 text-sm leading-relaxed">Data-backed roadmaps and AI-driven analysis to maximize your ROI.</p>
                 <div id="detail-2" class="details-content text-slate-300 text-sm border-t border-white/5 mt-4">
                     <p class="mb-3">We interpret data to find hidden growth opportunities, treating your ad budget like a high-performance portfolio.</p>
                 </div>
-                <div class="mt-6 flex justify-between items-center text-yellow-400 text-[10px] font-bold uppercase tracking-widest"><span>How it works</span><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mt-6 flex justify-between items-center text-yellow-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span>How it works</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
 
-            <div onclick="toggleDetails('detail-3')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+            <div onclick="toggleDetails('detail-3')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10 relative overflow-hidden">
                 <div class="w-14 h-14 bg-teal-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-code text-teal-500 text-2xl"></i></div>
                 <h3 class="text-2xl font-bold text-white mb-2">Permanent Portfolio</h3>
                 <p class="text-slate-400 text-sm leading-relaxed">Your professional Digital ID card that stays live forever without hosting fees.</p>
                 <div id="detail-3" class="details-content text-slate-300 text-sm border-t border-white/5 mt-4">
                     <p>Built using GitHub infrastructure for ultra-fast speeds and 100% uptime.</p>
                 </div>
-                <div class="mt-6 flex justify-between items-center text-teal-400 text-[10px] font-bold uppercase tracking-widest"><span>How it works</span><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mt-6 flex justify-between items-center text-teal-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span>How it works</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
 
-            <div onclick="toggleDetails('detail-4')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+            <div onclick="toggleDetails('detail-4')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10 relative overflow-hidden">
                 <div class="w-14 h-14 bg-orange-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-magnifying-glass text-orange-500 text-2xl"></i></div>
                 <h3 class="text-2xl font-bold text-white mb-2">SEO Mastery</h3>
                 <p class="text-slate-400 text-sm leading-relaxed">Fixing your digital footprint so customers find you naturally on Google.</p>
                 <div id="detail-4" class="details-content text-slate-300 text-sm border-t border-white/5 mt-4">
                     <p>Technical and On-Page SEO to ensure Google's robots love your site.</p>
                 </div>
-                <div class="mt-6 flex justify-between items-center text-orange-400 text-[10px] font-bold uppercase tracking-widest"><span>How it works</span><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mt-6 flex justify-between items-center text-orange-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span>How it works</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
 
-            <div onclick="toggleDetails('detail-5')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+            <div onclick="toggleDetails('detail-5')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10 relative overflow-hidden">
                 <div class="w-14 h-14 bg-pink-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-palette text-pink-500 text-2xl"></i></div>
                 <h3 class="text-2xl font-bold text-white mb-2">Design & Content</h3>
                 <p class="text-slate-400 text-sm leading-relaxed">Visual storytelling that makes your brand look premium.</p>
                 <div id="detail-5" class="details-content text-slate-300 text-sm border-t border-white/5 mt-4">
                     <p>High-converting ad graphics and brand assets engineered for engagement.</p>
                 </div>
-                <div class="mt-6 flex justify-between items-center text-pink-400 text-[10px] font-bold uppercase tracking-widest"><span>How it works</span><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mt-6 flex justify-between items-center text-pink-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span>How it works</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
 
-            <div onclick="toggleDetails('detail-6')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10">
+            <div onclick="toggleDetails('detail-6')" class="glass-card p-10 rounded-[2.5rem] hover-card border-white/10 relative overflow-hidden">
                 <div class="w-14 h-14 bg-indigo-600/20 rounded-2xl flex items-center justify-center mb-8"><i class="fa-solid fa-bullseye text-indigo-500 text-2xl"></i></div>
                 <h3 class="text-2xl font-bold text-white mb-2">Targeted Ads</h3>
                 <p class="text-slate-400 text-sm leading-relaxed">Precision campaigns reaching ideal customers ready to buy.</p>
                 <div id="detail-6" class="details-content text-slate-300 text-sm border-t border-white/5 mt-4">
                     <p>Full-funnel Meta and Google Ads management focusing on sales over likes.</p>
                 </div>
-                <div class="mt-6 flex justify-between items-center text-indigo-400 text-[10px] font-bold uppercase tracking-widest"><span>How it works</span><i class="fa-solid fa-chevron-down"></i></div>
+                <div class="mt-6 flex justify-between items-center text-indigo-400 text-[10px] font-bold uppercase tracking-widest">
+                    <span>How it works</span><i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -165,7 +177,7 @@
     <section id="testimonials" class="max-w-6xl mx-auto px-6 py-24 border-t border-white/5">
         <div class="text-center mb-16">
             <span class="text-blue-500 font-bold uppercase tracking-widest text-xs">Proof</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold mt-4 text-white">Trusted by <span class="gradient-text">Professionals.</span></h2>
+            <h2 class="text-3xl md:text-5xl font-extrabold mt-4 text-white">Success <span class="gradient-text">Stories.</span></h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="glass-card p-8 rounded-3xl border-white/10">
